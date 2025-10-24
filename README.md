@@ -10,6 +10,6 @@ The script is pretty self-explanatory.  Save it where ever you want to run it bu
 
 Create a new entry in root's crontab: 
 
-*       *       2       *       *       (/usr/local/etc/backup.sh) >/dev/null 2>&1
+```*       *       2       *       *       (/usr/local/etc/backup.sh) >/dev/null 2>&1```
 
 
