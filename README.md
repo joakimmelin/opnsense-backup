@@ -1,5 +1,7 @@
 # opnsense-backup
-simple script for backing up OPNSense configuration to another server.  Is supposed to run ever 24 hours and creates a unique file name every time (hostname-config-date.xml). 
+simple script for backing up OPNSense configuration to another server. Freel free to copy and/or modify as needed. 
+
+The script is supposed to run ever 24 hours and creates a unique file name every time (hostname-config-date.xml). 
 
 Requires the following: 
 
@@ -12,4 +14,5 @@ Create a new entry in root's crontab:
 
 ```*       *       2       *       *       (/usr/local/etc/backup.sh) >/dev/null 2>&1```
 
+Make sure to modify the script and include hostname, user and target directory for where the backups will be sent. 
 
