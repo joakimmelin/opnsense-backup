@@ -6,4 +6,10 @@ Requires the following:
 1. Install Bash (```pkg install bash```)
 2. Make sure login via SSH works without password (i.e with SSH key)
 
-The script is pretty self-explanatory. 
+The script is pretty self-explanatory.  Save it where ever you want to run it but /usr/local/etc is probably best. 
+
+Create a new entry in root's crontab: 
+
+*       *       2       *       *       (/usr/local/etc/backup.sh) >/dev/null 2>&1
+
+
